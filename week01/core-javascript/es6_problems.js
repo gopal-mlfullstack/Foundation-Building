@@ -51,32 +51,89 @@ Problem 4: Destructure Function Args
 Statement: Write an arrow function that takes an object {x, y} and returns their sum. Use destructuring in params.
 Input Example: sum({x: 4, y: 6})
 Output Example: 10
-*/ 
+ 
+const sum_ = ({x, y}) => x + y;
+console.log(sum_({x: 7, y: 3}));
+//👉 Problem:
+//Write an arrow function that takes an array [a, b] and returns their product.
+const product = ([a, b]) => a * b;
+console.log(product([99, 1]));
+console.log(product([7, 7]));
+//👉 Problem:
+//Write an arrow function that takes an object {a, b} and returns their sum, but if b is missing, use b = 5 as a default.
+const sum_v2 = ({a, b = 5}) => a + b;
+console.log(sum_v2({a: 7}));
 
+//Write an arrow function that takes:
+//{ user: { name, age } }
+//and returns a string like
+//"Gopal is 19 years old."
+//Example:
+//info({ user: { name: "Gopal", age: 19 } }) // ➡️ "Gopal is 19 years old."
+//💡 Hint: Destructure like ({ user: { name, age } }) => ...
+const message = ({user: { name, age}}) => name + " is " + age + " years old.";
+console.log(message({user: {name: "Gopal", age:19}}));
 
+//🧩 4. Destructuring with Renaming
+//👉 Problem:
+//Write an arrow function that takes an object {x: width, y: height} and returns width * height.
+//Example:
+//area({x: 4, y: 6}) // ➡️ 24
+
+const area = ({x: h, y: w}) => h * w;
+console.log(area({x: 6, y: 4}));
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//🧩 5. Mix of Array + Object Destructuring
+//👉 Problem:
+//Write an arrow function that takes:
+//[{x: 2, y: 3}, {x: 4, y: 5}]
+//and returns the sum of all x + y values.
+//Example:
+//sumCoords([{x: 2, y: 3}, {x: 4, y: 5}]) // ➡️ 14
+//💡 Hint: You’ll need to destructure both objects from the array — like ([{x: x1, y: y1}, {x: x2, y: y2}]) => 
+
+const sumCoords = ([{x: x1, y: y1}, {x: x2, y: y2}]) => x1+x2+y1+y2;
+console.log(sumCoords([{x: 2, y: 3}, {x: 4, y: 5}]));
+*/
 /*
 Problem 5: Block-Scoped Loop Counter
 Statement: Use a for loop with let to log numbers 1 to 5, then try accessing the counter outside (should error).
 Input Example: No input (just run the loop)
 Output Example: 1 2 3 4 5 (then ReferenceError outside)
+//CODE 
+for (let i = 1; i <= 5; i += 1){
+  console.log(i)
+}
+console.log(i);
+
+*/
+
+/*
 Problem 6: Array Destructuring with Defaults
 Statement: Destructure an array into variables first, second (default to 0 if missing), and rest.
 Input Example: const arr = [10];
 Output Example: first=10, second=0, rest=[] (log them)
+ 
+
+const arr = [10];
+
+const [first, second = 0, ...rest] = arr;
+
+console.log("first: ", first);
+console.log("second: ", second);
+console.log("rest: ", rest);
+
+*/ 
+
+/*
 Problem 7: Arrow Function with Rest Params
 Statement: Write an arrow function that takes any number of args and returns their product using reduce.
 Input Example: product(2, 3, 4)
 Output Example: 24
-Problem 8: Nested Object Destructuring
-Statement: Destructure a nested object to extract 'street' from { address: { street: 'Main', city: 'NY' } }.
-Input Example: const location = { address: { street: 'Main', city: 'NY' } };
-Output Example: street='Main' (log it)
-Problem 9: Convert Traditional to Arrow
-Statement: Convert this to arrow: function isEven(n) { return n % 2 === 0; } and use in filter on [1,2,3,4].
-Input Example: const nums = [1,2,3,4];
-Output Example: [2,4] (after filter)
-Problem 10: Combine All: User Profile Function
-Statement: Write an arrow function that takes a user object, destructures name and hobbies array, adds a new hobby using mutation (const user), and returns updated user.
-Input Example: update({ name: 'Gopal', hobbies: ['reading'] }, 'coding')
-Output Example: { name: 'Gopal', hobbies: ['reading', 'coding'] }
-*/
+
+const product_ = (...args) => args.reduce((acc, cur) => acc * cur, 1);
+
+console.log(product_(1, 3));
+*/ 
+
+
