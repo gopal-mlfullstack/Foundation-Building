@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Js</title>
+
+  </head>
+  <body>
+      <h1 Practice Js </h1>
+    
+              <script>
+          alert("While Loop example");
+          const friends = ["Manaranjan", "Ujjwal", "Gopal", "Div", "Yubraj"];
+          for (let i = 0; i < friends.length; i += 1){
+            alert(`Your current friend name is ${friends[i]}\nPress ok to see next name of your friend!`);
+            }
+          alert("End of the members")
+          let user_input = prompt("Do you want to add more members(y/n): ");
+          if (user_input.toLowerCase() == "y") {
+            user_total_number = prompt("How many new friends you want to add: ");
+            for (let i = 0; i < user_total_number; i += 1){
+              let friend_name = prompt("Enter Friend name to add: ");
+              friends.push(friend_name);
+            } let user_input_end = prompt("Now do you want to see all friends(y/n): ");
+              if (user_input_end.toLowerCase() == "y"){
+                alert(friends);
+              } else alert("OK!");
+          }else alert("Have a nice Day!");
+          
+        </script>
+  </body>
+</html>
