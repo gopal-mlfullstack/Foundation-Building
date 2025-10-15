@@ -18,9 +18,9 @@ Week 4: [░░░░░░░░░░] 0% 🔒 Locked
 Week 5: [░░░░░░░░░░] 0% 🔒 Locked
 Week 6: [░░░░░░░░░░] 0% 🔒 Locked
 ```
-
-**Days Completed**: 1 / 42 days  
-**Consistency Streak**: 🔥 1 days
+:> [!WARNING]
+**Days Completed**: 2 / 42 days  
+**Consistency Streak**: 🔥 2 days
 
 ---
 
@@ -33,7 +33,7 @@ Week 6: [░░░░░░░░░░] 0% 🔒 Locked
 | Day | Date | Topics | Status | Hours |
 |-----|------|--------|--------|-------|
 | 1 | Oct 14 | ES6+ features (let/const, arrow functions, destructuring) | ⬜ Todo | 03 |
-| 2 | Oct 15 | Arrays & Objects (map, filter, reduce, forEach) | ⬜ Todo | 0/12 |
+| 2 | Oct 15 | Arrays & Objects (map, filter, reduce, forEach) | ⬜ Todo |6.6|
 | 3 | Oct 16 | Promises, async/await, fetch API | ⬜ Todo | 0/12 |
 | 4 | Oct 17 | JavaScript OOP (classes, inheritance, prototypes) | ⬜ Todo | 0/12 |
 | 5 | Oct 18 | Closures, this keyword, event loop | ⬜ Todo | 0/12 |

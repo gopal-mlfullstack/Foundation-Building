@@ -37,6 +37,8 @@ console.log(`names: ${names}, type: ${typeof names}`);
 console.log(`friends: ${objects}, type: ${typeof objects}`);
 
 */
+
+/*
 // values are stored in stack
 const name = "Gopal Mahato";
 const age = 19;
@@ -65,3 +67,13 @@ console.log("7 as number: ", amount);
 
 amount = amount.toString();
 console.log("Back to sting using toSting: ", amount);
+
+//converting number to boolean
+let amount = 0;
+amount = Boolean(amount);
+console.log(amount, typeof amount);
+amount = 1;
+console.log(amount, typeof Boolean(amount));
+*/
+x = "Gopal " + "Mahato";
+console.log(x);
