@@ -19,7 +19,7 @@ Week 5: [░░░░░░░░░░] 0% 🔒 Locked
 Week 6: [░░░░░░░░░░] 0% 🔒 Locked
 ```
 :> [!WARNING]
-**Days Completed**: 2 / 42 days  
+**Days Completed**: 3 / 42 days  
 **Consistency Streak**: 🔥 2 days
 
 ---
@@ -32,9 +32,9 @@ Week 6: [░░░░░░░░░░] 0% 🔒 Locked
 
 | Day | Date | Topics | Status | Hours |
 |-----|------|--------|--------|-------|
-| 1 | Oct 14 | ES6+ features (let/const, arrow functions, destructuring) | ⬜ Todo | 03 |
-| 2 | Oct 15 | Arrays & Objects (map, filter, reduce, forEach) | ⬜ Todo |6.6|
-| 3 | Oct 16 | Promises, async/await, fetch API | ⬜ Todo | 0/12 |
+| 1 | Oct 14 | ES6+ features (let/const, arrow functions, destructuring) |✅| 03 |
+| 2 | Oct 15 | Arrays & Objects (map, filter, reduce, forEach) |✅|6.6|
+| 3 | Oct 16 | Promises, async/await, fetch API | ⬜ Todo |7.2|
 | 4 | Oct 17 | JavaScript OOP (classes, inheritance, prototypes) | ⬜ Todo | 0/12 |
 | 5 | Oct 18 | Closures, this keyword, event loop | ⬜ Todo | 0/12 |
 | 6 | Oct 19 | TypeScript basics (types, interfaces, generics) | ⬜ Todo | 0/12 |
@@ -66,10 +66,10 @@ Week 6: [░░░░░░░░░░] 0% 🔒 Locked
 - Medium Solved: 0
 - Total: 0 / 25
 
-### 📚 Concepts Mastered (0/10)
+### 📚 Concepts Mastered (2/10)
 
-- [ ] ES6+ features (destructuring, spread, rest)
-- [ ] Array methods (map, filter, reduce)
+- [✅] ES6+ features (destructuring, spread, rest)
+- [✅] Array methods (map, filter, reduce)
 - [ ] Async/await pattern
 - [ ] Promises and error handling
 - [ ] JavaScript OOP
