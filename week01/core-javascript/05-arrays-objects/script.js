@@ -162,5 +162,44 @@ const todos = [
 console.log(todos);
 console.log(todos[0].shoping[0].name);
 console.log(todos[0].work[1].name);
+*/
+const library = [
+  {
+    title: "Think and Grow Rich",
+    author: "Napolien Hill",
+    status: {
+      own: true,
+      reading: true,
+      read: false,
+    },
+  },
 
+  {
+    title: "Artificial Intelligence",
+    author: "Nils J. Nilsson",
+    status: {
+      own: false,
+      reading: true,
+      read: false,
+    },
+  },
 
+  {
+    title: "Game of Thrones",
+    author: "GR. Martin",
+    status: {
+      own: false,
+      reading: false,
+      read: false,
+    },
+  },
+];
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+
+const { title: firstBook } = library[0];
+console.log(firstBook);
+
+const libraryJSON = JSON.stringify(library);
+console.log(libraryJSON);
