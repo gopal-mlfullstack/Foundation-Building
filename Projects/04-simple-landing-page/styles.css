@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #333;
+    color: white;
+}
+
+.hero span {
+    background-color: aqua;
+    border-radius: 3px;
+    padding: 2px 5px;
+    color: black;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+
+}
+
+
+/*Hero Section*/
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+
+}
+
+
+
+.hero h2, .hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color:aqua;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.hero button:hover {
+    background-color: #555;
+    box-shadow: 0 0 10px aqua;
+}
+
+/*Features*/
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 10%;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    
+}
+
+.card h3 {
+    color: aqua;
+    padding-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    margin: 0 10px 10px 10px;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
+
