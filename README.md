@@ -1,7 +1,7 @@
 # 🚀 My Learning Journey
 
-**Current Day:** Day 2  
-**Start Date:** [Add your start date]
+**Current Day:** Day 3  
+**Start Date:** 21 Oct
 
 ---
 
@@ -9,11 +9,11 @@
 
 | Date | Hours | Focus Areas |
 |------|-------|-------------|
-| Day 1 | [X hrs] | HTML/CSS basics |
-| Day 2 | [X hrs] | [What you learned] |
-| Day 3 | [X hrs] | |
+| Day 1 | 6 | HTML/CSS basics |
+| Day 2 | 4 | HTML/CSS basics |
+| Day 3 | 7 |HTML/CSS 3 deployed projects|
 
-**Weekly Total:** [X hours]
+**Weekly Total:** [~17]
 
 ---
 

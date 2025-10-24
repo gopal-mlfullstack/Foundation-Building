@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #42a5f5, #478ed1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wraper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: white;
+    animation: fadeIn 1s ease;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.input-field {
+    position: relative; /* Ensure each input field is a positioning context for its label */
+    margin: 25px 0;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ccc;
+    pointer-events: none;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* When typing or focused */
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+    top: -20px; /* Move label above the input */
+    left: 0; /* Align to the left */
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.input-field input:focus {
+    border-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #2196f3, #1e88e5);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 2px #64b5f6;
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.signup-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .login-wraper {
+        padding: 30px;
+    }
+    .login-box h2 {
+        font-size: 1.6rem;
+    }
+}
