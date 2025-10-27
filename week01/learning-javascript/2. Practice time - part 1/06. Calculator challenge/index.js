@@ -1,14 +1,36 @@
-let num1 = 8
-let num2 = 2
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
-
-// Create four functions: add(), subtract(), divide(), multiply()
-// Call the correct function when the user clicks on one of the buttons
-// Perform the given calculation using num1 and num2
-// Render the result of the calculation in the paragraph with id="sum-el"
-
-// E.g. if the user clicks on the "Plus" button, you should render
-// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
-
-
+function getNumbers() {
+  const num1 = parseFloat(document.getElementById("first-num").value);
+  const num2 = parseFloat(document.getElementById("second-num").value);
+  return { num1, num2 };
+}
+function add() {
+  const { num1, num2 } = getNumbers();
+  document.getElementById("result").innerText = num1 + num2;
+}
+function subtract() {
+  const { num1, num2 } = getNumbers();
+  document.getElementById("result").innerText = num1 - num2;
+}
+function divide() {
+  const { num1, num2 } = getNumbers();
+  document.getElementById("result").innerText = num2 !== 0 ? num1 / num2 : "∞";
+}
+function multiply() {
+  const { num1, num2 } = getNumbers();
+  document.getElementById("result").innerText = num1 * num2;
+}
+function addClickEffect(buttonId, duration = 150) {
+  const btn = document.getElementById(buttonId);
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    btn.classList.add("clicked");
+    setTimeout(() => {
+      btn.classList.remove("clicked");
+    }, duration);
+  });
+}
+// Apply click effects
+addClickEffect("add-btn");
+addClickEffect("sub-btn");
+addClickEffect("div-btn");
+addClickEffect("mut-btn");
