@@ -1,12 +1,11 @@
-let randomNumber = Math.random()
+let randomNumber = Math.random();
 
-console.log(randomNumber)
-
+console.log(randomNumber);
 
 /* 
 
 What does Math.random() do?
 
 Your answer: 
-
+returns 0 > 1
 */

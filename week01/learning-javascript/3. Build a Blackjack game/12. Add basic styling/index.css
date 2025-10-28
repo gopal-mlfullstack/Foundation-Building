@@ -1,13 +1,24 @@
 /* Complete the CSS styling according to the provided design */
 
 body {
-    
+  background-image: url(images/table.png);
+  background-size: cover;
+  font-family: "Inter", sans-serif;
 }
 
 h1 {
-    color: goldenrod;
+  color: goldenrod;
+  text-align: center;
+  font-weight: bold;
+}
+#message-el,
+p {
+  text-align: center;
+  color: white;
+  font-size: 17px;
 }
 
 #message-el {
-    
+  font-style: italic;
+  font-weight: bold;
 }
